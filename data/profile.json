@@ -70,13 +70,25 @@
       "type": "tag",
       "subskills": [
         {
-          "name": "Docker"
+          "name": "git"
         },
         {
           "name": "Jira"
         },
         {
-          "name": "git"
+          "name": "Docker"
+        },
+        {
+          "name": "AirFlow"
+        },
+        {
+          "name": "Kubernetes"
+        },
+        {
+          "name": "Data Studio"
+        },
+        {
+          "name": "Google Cloud Platform"
         }
       ]
     },

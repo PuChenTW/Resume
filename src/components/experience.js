@@ -1,5 +1,5 @@
 import React from 'react';
-import { size, first, castArray } from 'lodash';
+import { map, castArray, get } from 'lodash';
 
 const Experience = ({ data }) => (
   <section>
@@ -11,15 +11,11 @@ const Experience = ({ data }) => (
           <h3 className="item-sub">
             {item.company} | {item.start} - {item.end || 'PRESENT'}
           </h3>
-          {size(item.description) > 1 ? (
-            <ul class="list-disc px-5">
-              {castArray(item.description).map(des => (
-                <li className="py-1">{des}</li>
-              ))}
-            </ul>
-          ) : (
-            <p className="py-6"> {first(item.description)} </p>
-          )}
+          <ul class="list-disc px-5">
+            {map(castArray(get(item, 'description')), des => (
+              <li className="py-1">{des}</li>
+            ))}
+          </ul>
         </article>
       ))}
   </section>

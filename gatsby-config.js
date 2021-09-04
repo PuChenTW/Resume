@@ -5,6 +5,7 @@
  */
 
 module.exports = {
+  pathPrefix: '/Resume',
   siteMetadata: {
     title: `Pu Chen | Software Engineer`,
     author: `Pu Chen`,

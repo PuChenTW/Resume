@@ -108,7 +108,7 @@
       ]
     }
   ],
-  "summary": "2+ years experience in software development. Skilled in Python, Javascript, Machine Learning, Software Development, Testing, and Debugging. Experience in rapid prototyping using open source software. Familiar with Cloud Application Development. Enjoy solving problems by programming.",
+  "summary": "2+ years experience in software development. Skilled in Python, Javascript, Machine Learning, Software Development, Testing, and Debugging. Experience in rapid prototyping using open-source software. Familiar with Cloud Application Development. Enjoy solving problems by programming.",
   "education": [
     {
       "institution": "National Central University",
@@ -128,8 +128,8 @@
       "role": "Software Engineer & Data Scientist",
       "company": "Changing.AI",
       "description": [
-        "Improved the recommendation system of the e-commerce client, increase Click-Through rate and Conversion rate by about 200%.",
-        "Improved the search engine performance of the e-commerce client and reduce search errors by more than 40%.",
+        "Improved the recommendation system performance of the e-commerce client, increased the click-through rate and conversion rate by about 200%.",
+        "Improved the search engine performance of the e-commerce client and reduced search errors by more than 40%.",
         "Developed and maintained data collecting tools using ReactJS and MongoDB."
       ],
       "start": "05/2019",
@@ -191,12 +191,12 @@
     {
       "name": "E-commerce Recommendation System",
       "company": "Changing.AI",
-      "description": "We built a recommendation system for one of the top 3 e-commerce websites in Taiwan. The system use Fluentd and ElasticSearch to collect real time log of user behavior. The data will be extract, transform and train the Deep Learning recommendation engine automatically using Airflow. In order to deal with the massive loading of e-commerce websites, we use Kubernetes and Docker to deploy and auto scale the server. Our system has increased the click-through rate and conversion rate by about 200%."
+      "description": "We built a recommendation system for one of the top 3 e-commerce websites in Taiwan. The system uses Fluentd and ElasticSearch to collect real time log of user behavior. The data will be extracted, transformed and trained the Deep Learning recommendation engine automatically using Airflow. In order to deal with the massive loading of e-commerce websites, we use Kubernetes and Docker to deploy and auto-scale the server. Our system has increased the click-through rate and conversion rate by about 200%."
     },
     {
       "name": "E-commerce Search Engine",
       "company": "Changing.AI",
-      "description": "Built a e-commerce search engine using ElasticSearch and Bert Deep Learning model. Our Engine reduce the errors by more than 40%."
+      "description": "We built an e-commerce search engine using ElasticSearch and Bert Deep Learning model. Our Engine reduces errors by more than 40%."
     }
   ],
   "publications": [

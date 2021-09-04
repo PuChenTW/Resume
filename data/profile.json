@@ -1,92 +1,49 @@
 {
   "contact": {
-    "phone": "+380 63 251 76 44",
-    "email": "contact@barancezayirli.com",
-    "website": "https://barancezayirli.com",
-    "location": "Kiev, Ukraine"
+    "phone": "+886 987902619",
+    "email": "puchen.tw@gmail.com",
+    "location": "Taipei, Taiwan"
   },
   "skills": [
     {
       "title": "General",
-      "type": "percent",
+      "type": "list",
       "subskills": [
         {
-          "name": "Architecture",
-          "percent": 89
+          "name": "Data Science"
         },
         {
-          "name": "Mobile/Web App Development",
-          "percent": 95
+          "name": "Artificial Intelligence"
         },
         {
-          "name": "Product Management",
-          "percent": 85
+          "name": "Web Application Development"
         },
         {
-          "name": "Project Management",
-          "percent": 92
-        },
-        {
-          "name": "Game Development",
-          "percent": 70
-        },
-        {
-          "name": "Blockchain",
-          "percent": 85
-        },
-        {
-          "name": "Dev Ops",
-          "percent": 81
-        },
-        {
-          "name": "Backend Development",
-          "percent": 93
-        },
-        {
-          "name": "Data Science",
-          "percent": 65
-        },
-        {
-          "name": "Artificial Intelligence",
-          "percent": 70
-        },
-        {
-          "name": "UX",
-          "percent": 80
+          "name": "Backend Development"
         }
       ]
     },
     {
       "title": "Languages",
-      "type": "percent",
+      "type": "list",
       "subskills": [
         {
-          "name": "Javascript",
-          "percent": 96
+          "name": "Python"
         },
         {
-          "name": "Java",
-          "percent": 82
+          "name": "Javascript"
         },
         {
-          "name": "Python",
-          "percent": 85
+          "name": "SQL"
         },
         {
-          "name": "C#",
-          "percent": 74
+          "name": "GraphQL"
         },
         {
-          "name": "Solidity",
-          "percent": 85
+          "name": "Java"
         },
         {
-          "name": "Dart",
-          "percent": 75
-        },
-        {
-          "name": "Go",
-          "percent": 60
+          "name": "C++"
         }
       ]
     },
@@ -98,61 +55,13 @@
           "name": "React"
         },
         {
-          "name": "Flutter"
+          "name": "TensorFlow"
         },
         {
-          "name": "React Native"
-        },
-        {
-          "name": "Vue"
-        },
-        {
-          "name": "Spring"
-        },
-        {
-          "name": "Angular"
-        },
-        {
-          "name": "Electron"
-        },
-        {
-          "name": "Node"
-        },
-        {
-          "name": "Flusk"
-        },
-        {
-          "name": "Express"
-        },
-        {
-          "name": "Koa"
+          "name": "Flask"
         },
         {
           "name": "Gatsby"
-        },
-        {
-          "name": "Apollo"
-        },
-        {
-          "name": "Django"
-        },
-        {
-          "name": "Loopback"
-        },
-        {
-          "name": "Next"
-        },
-        {
-          "name": "Amplify"
-        },
-        {
-          "name": "Pixi"
-        },
-        {
-          "name": "Phaser"
-        },
-        {
-          "name": "Feathers"
         }
       ]
     },
@@ -167,13 +76,7 @@
           "name": "Jira"
         },
         {
-          "name": "Unity"
-        },
-        {
-          "name": "Godot"
-        },
-        {
-          "name": "Google Analytics"
+          "name": "git"
         }
       ]
     },
@@ -182,127 +85,113 @@
       "type": "tag",
       "subskills": [
         {
-          "name": "Postgresql"
+          "name": "Big Query"
         },
         {
           "name": "Mongodb"
         },
         {
-          "name": "Parse"
-        },
-        {
-          "name": "Firebase"
-        },
-        {
-          "name": "Elastic Search"
+          "name": "ElasticSearch"
         }
       ]
     }
   ],
-  "summary": "Highly focused technologist with a multidisciplinary skill set honed over 15+ years in the IT industry. I strive to build great products and can take an initial idea, tackle it from multiple angles and take it from something great to something incredible. With 15+ years of experience in various industries, I help tech startups from idea phase to high volumes. I design and build scalable solutions, implement internal processes that fit your organization, build teams that produce results.",
+  "summary": "2+ years experience in software development. Skilled in Python, Javascript, Machine Learning, Software Development, Testing, and Debugging. Experience in rapid prototyping using open source software. Familiar with Cloud Application Development. Enjoy solving problems by programming.",
   "education": [
     {
-      "institution": "Middle East Technical University, Turkey",
-      "degree": "Geological Engineering",
-      "start": "2013",
-      "end": "2006"
+      "institution": "National Central University",
+      "degree": "Master, Computer Science",
+      "start": "2016",
+      "end": "2018"
     },
     {
-      "institution": "Gazi University, Turkey",
-      "degree": "Industrial Engineering",
-      "start": "2002",
-      "end": "2006"
+      "institution": "Yuan Ze University",
+      "degree": "Bachelor, Computer Science",
+      "start": "2012",
+      "end": "2016"
     }
   ],
   "experience": [
     {
-      "role": "Consultant",
-      "company": "Baran Cezayirli Consulting",
-      "description": "I consult startups to take their concept to the next level.",
-      "start": "08/2018",
+      "role": "Software Engineer & Data Scientist",
+      "company": "Changing.AI",
+      "description": [
+        "Improved the recommendation system of the e-commerce client, increase Click-Through rate and Conversion rate by about 200%.",
+        "Improved the search engine search results of the e-commerce client and reduce errors by more than 40%.",
+        "Developed and maintained data collecting tools using ReactJS and MongoDB."
+      ],
+      "start": "05/2019",
       "end": ""
     },
     {
-      "role": "Full Stack Tech Lead",
-      "company": "Malaeb Limited",
-      "description": "Malaeb is a group sports community and booking platform. I was managing all technical aspects of the product. I designed a new solution to improve the current platform, build and manage a new development team to migrate the new app. Implement better internal processes to increase productivity.",
-      "start": "11/2018",
-      "end": "09/2019"
+      "role": "Machine Learning Engineer Intern",
+      "company": "Changing.AI",
+      "description": [
+        "Building recommendation system using Python and TensorFlow.",
+        "Building machine learning training pipeline using Airflow.",
+        "Visualized model performance using Google Data Studio."
+      ],
+      "start": "07/2018",
+      "end": "12/2018"
     },
     {
-      "role": "Full Stack Tech Lead",
-      "company": "Solve Care",
-      "description": "Solve care is a healthcare blockchain platform. I was responsible for the client side development team and architecture of the platform. I was also active in product management team.",
-      "start": "04/2018",
-      "end": "11/2018"
+      "role": "Teacher assistant - Introduction to Data Science",
+      "company": "National Central University",
+      "description": [
+        "Gave a Python crash course.",
+        "Grade assignments and answer questions from students."
+      ],
+      "start": "09/2017",
+      "end": "01/2018"
     },
     {
-      "role": "Full Stack Lead Developer",
-      "company": "Applied Blockchain",
-      "description": "Applied Blockchain built blockchain applications for enterprises and startups. I built 4 full stack blockchain projects during my contract.",
-      "start": "10/2017",
-      "end": "04/2018"
+      "role": "Teacher assistant - Introduction to Computer Science",
+      "company": "National Central University",
+      "description": [
+        "Gave a lecture of Introduction of Android.",
+        "Design and grade C++ and Java coding assignments."
+      ],
+      "start": "09/2016",
+      "end": "06/2017"
     },
     {
-      "role": "Full Stack Lead Developer",
-      "company": "Dmapper",
-      "description": "Worked as a lead full-stack developer for Cortex which is B2B audit automation software for Deloitte. I was responsible for the architecture and development of the platform, managing development team.",
-      "start": "12/2016",
-      "end": "10/2017"
-    },
-    {
-      "role": "Front End Developer - UI/UX Designer",
-      "company": "GovRight",
-      "description": "GovRight provides citizens the opportunity to understand and contribute to government and legislation. I was responsible for the UX and development of admin interface for the platform.",
-      "start": "11/2015",
-      "end": "04/2016"
-    },
-    {
-      "role": "Full Stack Developer",
-      "company": "Freelance",
-      "description": "In the first years of my career, I had the privilege to work with many startups and building my own games and applications.",
-      "start": "04/2008",
-      "end": "01/2016"
+      "role": "Android develop Intern",
+      "company": "Academia Sinica",
+      "description": [
+        "Built Android App for Academia Sinica Open House event."
+      ],
+      "start": "02/2015",
+      "end": "02/2016"
     }
   ],
   "social": [
     {
-      "service": "youtube",
-      "url": "https://www.youtube.com/channel/UCczRc31u_YXNiSpYKxQU_Ug"
-    },
-    {
       "service": "linkedin",
-      "url": "https://www.linkedin.com/in/barancezayirli"
-    },
-    {
-      "service": "twitter",
-      "url": "https://twitter.com/barancezayirli"
-    },
-    {
-      "service": "angellist",
-      "url": "https://angel.co/baran-cezayirli"
+      "url": "https://www.linkedin.com/in/%E7%92%9E-%E9%99%B3-ba2a8a15a/"
     },
     {
       "service": "github",
-      "url": "https://github.com/barancezayirli"
-    },
-    {
-      "service": "facebook",
-      "url": "https://www.facebook.com/barancezayirli"
-    },
-    {
-      "service": "instagram",
-      "url": "https://www.instagram.com/barancezayirli"
+      "url": "https://github.com/PuChenTW"
     }
   ],
-  "role": "Technologist",
+  "role": "Software Engineer",
   "projects": [
     {
-      "name": "Gatsby resume starter",
-      "company": "Open source",
-      "description": "Gatsby resume tailwind is a free starter template with  Netlify CMS implementation. It is easy to customize the design with thanks to tailwind theming capabilities. It uses git as a backend and can be deployed to any static hosting service like Netlify, firebase hosting or Github pages.",
-      "link": "https://github.com/barancezayirli/gatsby-resume-tailwind"
+      "name": "E-commerce Recommendation System",
+      "company": "Changing.AI",
+      "description": "We built a recommendation system for one of the top 3 e-commerce websites in Taiwan. The system use Fluentd and ElasticSearch to collect real time log of user behavior. The data will be extract, transform and train the Deep Learning recommendation engine automatically using Airflow. In order to deal with the massive loading of e-commerce websites, we use Kubernetes and Docker to deploy and auto scale the server. Our system has increased the click-through rate and conversion rate by about 200%."
+    },
+    {
+      "name": "E-commerce Search Engine",
+      "company": "Changing.AI",
+      "description": "Built a e-commerce search engine using ElasticSearch and Bert Deep Learning model. Our Engine reduce the errors by more than 40%."
     }
   ],
-  "fullname": "Baran Cezayirli"
+  "publications": [
+    {
+      "title": "Differentiating Regularization Weights – a Simple Mechanism to Alleviate Cold Start in Recommender Systems",
+      "publisher": "TKDD ACM Transactions on Knowledge Discovery from Data 13(1), 2019"
+    }
+  ],
+  "fullname": "Pu Chen"
 }

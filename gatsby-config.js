@@ -6,28 +6,22 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Baran Cezayirli | Technologist`,
-    author: `Baran Cezayirli`,
-    description: `With 10+ years of experience in various industries, I help tech
-              startups from idea phase to high volumes. I design and build
-              scalable solutions, implement internal processes that fit your
-              organization, build teams that produce results.`,
-    siteUrl: `https://barancezayirli.com/`,
-    social: {
-      twitter: `barancezayirli`,
-    },
+    title: `Pu Chen | Software Engineer`,
+    author: `Pu Chen`,
+    description: `Software Engineer in Changing.AI`,
+    siteUrl: `https://www.linkedin.com/in/%E7%92%9E-%E9%99%B3-ba2a8a15a/`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Baran Cezayirli | Technologist`,
+        name: `Pu Chen | Software Engineer`,
         short_name: `CV`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#38B2AC`,
         display: `standalone`,
-        icon: 'src/assets/site-icon.png'
+        icon: 'src/assets/site-icon.png',
       },
     },
     'gatsby-plugin-offline',
@@ -54,7 +48,7 @@ module.exports = {
       options: {
         printRejected: true,
         tailwind: true, // Enable tailwindcss support
-      }
-    }
+      },
+    },
   ],
 };

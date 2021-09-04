@@ -1,9 +1,8 @@
 # Gatsby Starter Resume CMS
 
-![resume-template](./preview.png "Gatsby resume template")
+![resume-template](./preview.png 'Gatsby resume template')
 
-
-Gatsby Starter Resume CMS is a free starter template with  Netlify CMS as headless CMS. It is easy to customize the design with thanks to tailwind theming capabilities. It uses git as a backend and can be deployed to any static hosting service like Netlify, firebase hosting or Github pages.
+Gatsby Starter Resume CMS is a free starter template with Netlify CMS as headless CMS. It is easy to customize the design with thanks to tailwind theming capabilities. It uses git as a backend and can be deployed to any static hosting service like Netlify, firebase hosting or Github pages.
 
 [Demo](https://gatsby-resume-starter.netlify.com/)
 
@@ -49,7 +48,7 @@ You can find more information on resume widgets and theming [here](https://baran
 
 ### Netlify CMS as Headless CMS
 
-To use Netlify CMS  you’ll need to deploy to Netlify through GitHub, Gitlab or Bitbucket, set up continuous deployment, and do a few configuration. For Github:
+To use Netlify CMS you’ll need to deploy to Netlify through GitHub, Gitlab or Bitbucket, set up continuous deployment, and do a few configuration. For Github:
 
 Open `static/admin/config.yml`. Replace `barancezayirli/gatsby-resume-tailwind` with your GitHub username and project name. This step is important for managing and deploying the Netlify CMS interface.
 

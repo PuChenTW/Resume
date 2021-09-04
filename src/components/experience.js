@@ -1,4 +1,5 @@
 import React from 'react';
+import { size, first, castArray } from 'lodash';
 
 const Experience = ({ data }) => (
   <section>
@@ -10,7 +11,15 @@ const Experience = ({ data }) => (
           <h3 className="item-sub">
             {item.company} | {item.start} - {item.end || 'PRESENT'}
           </h3>
-          <p className="py-6">{item.description}</p>
+          {size(item.description) > 1 ? (
+            <ul class="list-disc px-5">
+              {castArray(item.description).map(des => (
+                <li className="py-1">{des}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="py-6"> {first(item.description)} </p>
+          )}
         </article>
       ))}
   </section>

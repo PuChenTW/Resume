@@ -4,11 +4,12 @@ import {
   Summary,
   Experience,
   Projects,
+  Publications,
   Skills,
   List,
   Education,
   Footer,
-  SEO
+  SEO,
 } from '../components';
 import resume from '../../data/profile';
 import '../main.css';
@@ -16,6 +17,7 @@ import '../main.css';
 const Home = () => (
   <main className="antialiased text-neutral-900 bg-neutral-100 min-h-screen sm:p-5">
     <SEO title="Resume" />
+
     <div className="container mx-auto shadow bg-white py-5 px-10">
       <Header
         contacts={resume.contact}
@@ -27,6 +29,7 @@ const Home = () => (
         <div className="lg:w-2/3 lg:pr-8">
           {resume.experience && <Experience data={resume.experience} />}
           {resume.projects && <Projects data={resume.projects} />}
+          {resume.publications && <Publications data={resume.publications} />}
         </div>
         <div className="lg:w-1/3 lg:pl-8 lg:border-l lg:border-neutral-300 ">
           {resume.skills && <Skills data={resume.skills} />}

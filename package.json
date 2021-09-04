@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-resume-tailwind",
+  "name": "resume",
   "private": true,
   "description": "Gatsby starter for resume",
   "version": "0.1.0",
@@ -24,6 +24,7 @@
     "gatsby-plugin-react-svg": "^2.1.2",
     "gatsby-source-filesystem": "^2.1.43",
     "gatsby-transformer-json": "^2.2.22",
+    "lodash": "^4.17.21",
     "netlify-cms-app": "^2.10.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

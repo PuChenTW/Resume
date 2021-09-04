@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: barancezayirli/gatsby-starter-resume-cms #TODO replace this with your own repo
+  repo: PuChenTW/Resume
 
 media_folder: static/assets
 public_folder: assets

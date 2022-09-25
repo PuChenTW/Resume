@@ -54,13 +54,13 @@
           "name": "React"
         },
         {
+          "name": "Django"
+        },
+        {
           "name": "TensorFlow"
         },
         {
-          "name": "Flask"
-        },
-        {
-          "name": "Gatsby"
+          "name": "Scrapy"
         }
       ]
     },
@@ -123,6 +123,15 @@
     }
   ],
   "experience": [
+    {
+      "role": "Software Engineer",
+      "company": "GoFreight",
+      "description": [
+        "Improving crawler stability",
+        "Maintaining Django backend"
+      ],
+      "start": "05/2022"
+    },
     {
       "role": "Software Engineer & Data Scientist",
       "company": "Changing.AI",

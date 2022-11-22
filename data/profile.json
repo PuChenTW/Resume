@@ -88,6 +88,12 @@
         },
         {
           "name": "Google Cloud Platform"
+        },
+        {
+          "name": "Grafana"
+        },
+        {
+          "name": "Prometheus"
         }
       ]
     },
@@ -96,13 +102,16 @@
       "type": "tag",
       "subskills": [
         {
-          "name": "Big Query"
+          "name": "BigQuery"
         },
         {
           "name": "Mongodb"
         },
         {
           "name": "ElasticSearch"
+        },
+        {
+          "name": "PostgresSQL"
         }
       ]
     }

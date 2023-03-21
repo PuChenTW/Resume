@@ -173,35 +173,6 @@
       ],
       "start": "07/2018",
       "end": "12/2018"
-    },
-    {
-      "role": "Teacher assistant - Introduction to Data Science",
-      "company": "National Central University",
-      "description": [
-        "Gave a Python crash course.",
-        "Grade assignments and answer questions from students."
-      ],
-      "start": "09/2017",
-      "end": "01/2018"
-    },
-    {
-      "role": "Teacher assistant - Introduction to Computer Science",
-      "company": "National Central University",
-      "description": [
-        "Gave a lecture of Introduction of Android.",
-        "Design and grade C++ and Java coding assignments."
-      ],
-      "start": "09/2016",
-      "end": "06/2017"
-    },
-    {
-      "role": "Android Developer Intern",
-      "company": "Academia Sinica",
-      "description": [
-        "Built Android App for Academia Sinica Open House event."
-      ],
-      "start": "02/2015",
-      "end": "02/2016"
     }
   ],
   "social": [

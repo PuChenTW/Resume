@@ -112,6 +112,9 @@
         },
         {
           "name": "PostgresSQL"
+        },
+        {
+          "name": "MySQL"
         }
       ]
     }
@@ -137,7 +140,9 @@
       "company": "Deep Sentinel",
       "description": [
         "Assist in testing AI models so that products can be launched on schedule.",
-        "Fix DB issues and improve overall database performance."
+        "Fix DB issues and improve overall database performance.",
+        "Building a testing environment for the existing project and applying it to the CI stage.",
+        "Optimize the existing CI process, add lint and testing to improve the quality of the code."
       ],
       "start": "02/2023"
     },

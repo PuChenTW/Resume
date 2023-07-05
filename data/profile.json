@@ -119,7 +119,7 @@
       ]
     }
   ],
-  "summary": "3+ years experience in software development. Skilled in Python, Javascript, Software Development, Machine Learning, Software Testing and Debugging. Experienced in rapid prototyping using open-source software. Familiar with Cloud Application Development. Enjoy solving problems by coding.",
+  "summary": "4+ years experience in software development. Skilled in Python, Javascript, Software Development, Machine Learning, Software Testing and Debugging. Experienced in rapid prototyping using open-source software. Familiar with Cloud Application Development. Enjoy solving problems by coding.",
   "education": [
     {
       "institution": "National Central University",
@@ -139,12 +139,13 @@
       "role": "Software Engineer",
       "company": "Deep Sentinel",
       "description": [
-        "Assist in testing AI models so that products can be launched on schedule.",
+        "Developed an object detection model evaluation tool.",
         "Fix DB issues and improve overall database performance.",
         "Building a testing environment for the existing project and applying it to the CI stage.",
         "Optimize the existing CI process, add lint and testing to improve the quality of the code."
       ],
-      "start": "02/2023"
+      "start": "02/2023",
+      "end": "07/2023"
     },
     {
       "role": "Software Engineer",
@@ -201,6 +202,12 @@
       "name": "E-commerce Search Engine",
       "company": "Changing.AI",
       "description": "We built an e-commerce search engine using ElasticSearch and Bert Deep Learning model. Our Engine reduces errors by more than 40%."
+    },
+    {
+      "name": "ChatGPT Chrome Extension",
+      "company": "Personal side project",
+      "link": "https://github.com/PuChenTW/gpt-extension",
+      "description": "This is a Google Chrome extension that provides a quick and easy way to check the grammar of text on websites. Users can also define their own prompts in the options page to let the extension do other tasks, such as code review or creating an abstract for the article."
     }
   ],
   "publications": [

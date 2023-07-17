@@ -51,19 +51,5 @@ module.exports = {
         tailwind: true, // Enable tailwindcss support
       },
     },
-    {
-      resolve: "gatsby-plugin-firebase",
-      options: {
-        credentials: {
-          apiKey: 'AIzaSyD8r0e50YWGfn_QH17ZI6v491zYQ_0_Ago',
-          authDomain: 'resume-21563.firebaseapp.com',
-          projectId: 'resume-21563',
-          storageBucket: 'resume-21563.appspot.com',
-          messagingSenderId: '137368038192',
-          appId: '1:137368038192:web:33d22946531cd7e9af76f5',
-          measurementId: 'G-PT8DBMBCG8',
-        }
-      }
-    }
   ],
 };

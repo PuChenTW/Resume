@@ -1,5 +1,3 @@
-import "firebase/analytics"
-
 export const onServiceWorkerUpdateReady = () => {
   // eslint-disable-next-line no-alert
   const answer = window.confirm(

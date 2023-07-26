@@ -136,6 +136,14 @@
   ],
   "experience": [
     {
+      "role": "Data Scientist",
+      "company": "XRSPACE",
+      "description": [
+        "Optimize Looker Studio reports and reduce the cost of BigQuery."
+      ],
+      "start": "07/2023"
+    },
+    {
       "role": "Software Engineer",
       "company": "Deep Sentinel",
       "description": [

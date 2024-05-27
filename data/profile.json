@@ -39,10 +39,10 @@
           "name": "GraphQL"
         },
         {
-          "name": "Java"
+          "name": "Golang"
         },
         {
-          "name": "C++"
+          "name": "Terraform"
         }
       ]
     },
@@ -60,7 +60,13 @@
           "name": "TensorFlow"
         },
         {
+          "name": "Pytorch"
+        },
+        {
           "name": "Scrapy"
+        },
+        {
+          "name": "Langchain"
         }
       ]
     },
@@ -72,28 +78,40 @@
           "name": "git"
         },
         {
-          "name": "Jira"
-        },
-        {
           "name": "Docker"
         },
         {
           "name": "AirFlow"
         },
         {
+          "name": "Dagster"
+        },
+        {
           "name": "Kubernetes"
         },
         {
-          "name": "Data Studio"
+          "name": "Looker Studio"
         },
         {
           "name": "Google Cloud Platform"
+        },
+        {
+          "name": "Amazon Web Services"
         },
         {
           "name": "Grafana"
         },
         {
           "name": "Prometheus"
+        },
+        {
+          "name": "Google Analytics"
+        },
+        {
+          "name": "Firebase"
+        },
+        {
+          "name": "Kafka"
         }
       ]
     },
@@ -119,7 +137,7 @@
       ]
     }
   ],
-  "summary": "4+ years experience in software development. Skilled in Python, Javascript, Software Development, Machine Learning, Software Testing and Debugging. Experienced in rapid prototyping using open-source software. Familiar with Cloud Application Development. Enjoy solving problems by coding.",
+  "summary": "5+ years experience in software development. Skilled in Python, Javascript, Software Development, Machine Learning, Software Testing and Debugging. Experienced in rapid prototyping using open-source software. Familiar with Cloud Application Development. Enjoy solving problems by coding.",
   "education": [
     {
       "institution": "National Central University",
@@ -136,10 +154,12 @@
   ],
   "experience": [
     {
-      "role": "Data Scientist",
+      "role": "Software Engineer & Data Scientist",
       "company": "XRSPACE",
       "description": [
-        "Optimize Looker Studio reports and reduce the cost of BigQuery."
+        "Optimize Looker Studio reports and reduce the cost of BigQuery.",
+        "Building Data Pipeline using Dagster and Kafka.",
+        "Building AI Agent using Langchain."
       ],
       "start": "07/2023"
     },

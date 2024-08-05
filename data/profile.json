@@ -158,8 +158,11 @@
       "company": "XRSPACE",
       "description": [
         "Optimize Looker Studio reports and reduce the cost of BigQuery.",
-        "Building Data Pipeline using Dagster and Kafka.",
-        "Building AI Agent using Langchain."
+        "Design and build data pipeline using Dagster, Kafka, KSQL, and Debezium connector.",
+        "Build AI model CI/CD pipeline using GitHub Actions, Terraform, and AWS SageMaker.",
+        "Build AI agent using Flask and LangChain.",
+        "Experienced in deploying and maintaining cloud applications on K8s with Helm Charts and ArgoCD.",
+        "Building a replacement for Firebase Dynamic Links with Golang backend server and React frontend."
       ],
       "start": "07/2023"
     },

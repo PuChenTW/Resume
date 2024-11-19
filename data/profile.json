@@ -81,10 +81,16 @@
           "name": "Docker"
         },
         {
+          "name": "Airbytes"
+        },
+        {
           "name": "AirFlow"
         },
         {
           "name": "Dagster"
+        },
+        {
+          "name": "DBT"
         },
         {
           "name": "Kubernetes"
@@ -158,7 +164,7 @@
       "company": "XRSPACE",
       "description": [
         "Optimize Looker Studio reports and reduce the cost of BigQuery.",
-        "Design and build data pipeline using Dagster, Kafka, KSQL, and Debezium connector.",
+        "Design and build data pipeline using Airbytes, Dagster, DBT, Kafka, KSQL and Debezium connector.",
         "Build AI model CI/CD pipeline using GitHub Actions, Terraform, and AWS SageMaker.",
         "Build AI agent using Flask and LangChain.",
         "Experienced in deploying and maintaining cloud applications on K8s with Helm Charts and ArgoCD.",

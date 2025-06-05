@@ -9,7 +9,7 @@
       "type": "list",
       "subskills": [
         {
-          "name": "Data Science"
+          "name": "Data Engineering"
         },
         {
           "name": "Artificial Intelligence"
@@ -36,9 +36,6 @@
           "name": "SQL"
         },
         {
-          "name": "GraphQL"
-        },
-        {
           "name": "Golang"
         },
         {
@@ -51,10 +48,13 @@
       "type": "tag",
       "subskills": [
         {
-          "name": "React"
+          "name": "FastAPI"
         },
         {
-          "name": "Django"
+          "name": "PydanticAI"
+        },
+        {
+          "name": "React"
         },
         {
           "name": "TensorFlow"
@@ -64,9 +64,6 @@
         },
         {
           "name": "Scrapy"
-        },
-        {
-          "name": "Langchain"
         }
       ]
     },
@@ -160,15 +157,26 @@
   ],
   "experience": [
     {
+      "role": "Engineering Manager",
+      "company": "XRSPACE",
+      "description": [
+        "Manage a team of 3 engineers to develop and maintain data pipeline.",
+        "Streamlined product release process by integrating LLM with GitHub, Jira APIs, and a Chrome extension, accelerating release workflow by 50%.",
+        "Introduced vibe coding culture to enhance team collaboration, creativity, and productivity."
+      ],
+      "start": "12/2024"
+    },
+    {
       "role": "Senior Software Engineer",
       "company": "XRSPACE",
       "description": [
-        "Optimize Looker Studio reports and reduce the cost of BigQuery.",
         "Design and build data pipeline using Airbytes, Dagster, DBT, Kafka, KSQL and Debezium connector.",
+        "Established CI/CD workflows for Data pipeline using GitHub Actions, integrating Slack notifications for deployment issues.",
+        "Implemented Slack notifications to alert the team when anomalies occur during data processing in the pipeline.",
+        "Optimize Looker Studio reports and reduce the cost of BigQuery by 90%.",
         "Build AI model CI/CD pipeline using GitHub Actions, Terraform, and AWS SageMaker.",
-        "Build AI agent using Flask and LangChain.",
         "Experienced in deploying and maintaining cloud applications on K8s with Helm Charts and ArgoCD.",
-        "Building a replacement for Firebase Dynamic Links with Golang backend server and React frontend."
+        "Build AI agent service using FastAPI and PydanticAI."
       ],
       "start": "07/2023"
     },

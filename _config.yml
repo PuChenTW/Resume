@@ -16,6 +16,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# Multi-language settings
+languages: ["en", "zh"]
+default_lang: "en"
+exclude_from_localizations: ["javascript", "images", "css"]
+
 # SEO settings
 lang: en_US
 twitter:

@@ -18,6 +18,40 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    position: relative;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 100;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.lang-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+}
+
+.lang-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.lang-btn.active {
+    background: rgba(255, 255, 255, 0.9);
+    color: #667eea;
+    border-color: rgba(255, 255, 255, 0.9);
 }
 
 .header {
@@ -317,6 +351,25 @@ h2::after {
     .container {
         margin: 1rem;
         border-radius: 0;
+    }
+    
+    .language-switcher {
+        position: static;
+        background: rgba(102, 126, 234, 0.1);
+        padding: 1rem;
+        justify-content: center;
+        border-bottom: 1px solid rgba(102, 126, 234, 0.2);
+    }
+    
+    .lang-btn {
+        background: white;
+        color: #667eea;
+        border: 1px solid #667eea;
+    }
+    
+    .lang-btn.active {
+        background: #667eea;
+        color: white;
     }
     
     .header {

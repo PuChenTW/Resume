@@ -12,7 +12,10 @@
           "name": "Data Engineering"
         },
         {
-          "name": "Artificial Intelligence"
+          "name": "Machine Learning"
+        },
+        {
+          "name": "Large Language Models"
         },
         {
           "name": "Web Application Development"
@@ -37,9 +40,6 @@
         },
         {
           "name": "Golang"
-        },
-        {
-          "name": "Terraform"
         }
       ]
     },
@@ -64,6 +64,12 @@
         },
         {
           "name": "Scrapy"
+        },
+        {
+          "name": "Terraform"
+        },
+        {
+          "name": "Pulumi"
         }
       ]
     },
@@ -112,9 +118,6 @@
         },
         {
           "name": "Firebase"
-        },
-        {
-          "name": "Kafka"
         }
       ]
     },
@@ -157,26 +160,15 @@
   ],
   "experience": [
     {
-      "role": "Engineering Manager",
-      "company": "XRSPACE",
-      "description": [
-        "Manage a team of 3 engineers to develop and maintain data pipeline.",
-        "Streamlined product release process by integrating LLM with GitHub, Jira APIs, and a Chrome extension, accelerating release workflow by 50%.",
-        "Introduced vibe coding culture to enhance team collaboration, creativity, and productivity."
-      ],
-      "start": "12/2024"
-    },
-    {
       "role": "Senior Software Engineer",
       "company": "XRSPACE",
       "description": [
-        "Design and build data pipeline using Airbytes, Dagster, DBT, Kafka, KSQL and Debezium connector.",
-        "Established CI/CD workflows for Data pipeline using GitHub Actions, integrating Slack notifications for deployment issues.",
-        "Implemented Slack notifications to alert the team when anomalies occur during data processing in the pipeline.",
-        "Optimize Looker Studio reports and reduce the cost of BigQuery by 90%.",
-        "Build AI model CI/CD pipeline using GitHub Actions, Terraform, and AWS SageMaker.",
-        "Experienced in deploying and maintaining cloud applications on K8s with Helm Charts and ArgoCD.",
-        "Build AI agent service using FastAPI and PydanticAI."
+        "Led a cross-functional team of 4 engineers to architect, develop, and maintain scalable data pipelines and Retrieval-Augmented Generation (RAG) applications.",
+        "Designed and implemented automated CI/CD workflows for data and AI pipelines using GitHub Actions, Terraform, and AWS SageMaker, reducing deployment time by 60% and improving system reliability.",
+        "Integrated Large Language Models (LLMs) with GitHub/Jira APIs and developed Chrome extensions to automate product release workflows, accelerating development cycles by 40%.",
+        "Orchestrated cloud-native application deployments on Kubernetes using Helm and ArgoCD; architected and deployed MLflow service on GCP with Pulumi for ML lifecycle management.",
+        "Built and optimized a real-time audio-to-facial blendshape model using PyTorch and ONNX, achieving 30% performance improvement while reducing computational costs.",
+        "Cultivated a high-performance engineering culture focused on innovation, collaboration, and continuous improvement."
       ],
       "start": "07/2023"
     },
@@ -184,10 +176,9 @@
       "role": "Software Engineer",
       "company": "Deep Sentinel",
       "description": [
-        "Developed an object detection model evaluation tool.",
-        "Fix DB issues and improve overall database performance.",
-        "Building a testing environment for the existing project and applying it to the CI stage.",
-        "Optimize the existing CI process, add lint and testing to improve the quality of the code."
+        "Developed an object detection model evaluation tool to improve ML workflow efficiency.",
+        "Resolved database performance issues and enhanced overall system stability.",
+        "Built and integrated automated testing environments into CI pipelines, raising code quality."
       ],
       "start": "02/2023",
       "end": "07/2023"
@@ -196,9 +187,9 @@
       "role": "Software Engineer",
       "company": "GoFreight",
       "description": [
-        "Developed and maintained web crawler using Scrapy.",
-        "Developed data accuracy dashboard.",
-        "Visualized proxy usage and crawler stability by Prometheus and Grafana."
+        "Developed and maintained scalable web crawlers using Scrapy.",
+        "Built data accuracy dashboards to monitor and ensure data quality.",
+        "Implemented system observability with Prometheus and Grafana for proxy and crawler stability."
       ],
       "start": "05/2022",
       "end": "11/2022"
@@ -207,9 +198,9 @@
       "role": "Software Engineer & Data Scientist",
       "company": "Changing.AI",
       "description": [
-        "Improved the recommendation system performance of the e-commerce client, increased the click-through rate and conversion rate by about 200%.",
-        "Improved the search engine performance of the e-commerce client and reduced search errors by more than 40%.",
-        "Developed and maintained data collecting tools using ReactJS and MongoDB."
+        "Enhanced e-commerce recommendation system, boosting click-through and conversion rates by ~200%.",
+        "Optimized search engine, reducing errors by over 40%.",
+        "Developed and maintained data collection tools with ReactJS and MongoDB."
       ],
       "start": "05/2019",
       "end": "03/2022"
@@ -218,9 +209,9 @@
       "role": "Machine Learning Engineer Intern",
       "company": "Changing.AI",
       "description": [
-        "Building recommendation system using Python and TensorFlow.",
-        "Building machine learning training pipeline using Airflow.",
-        "Visualized model performance using Google Data Studio."
+        "Built recommendation systems with Python and TensorFlow.",
+        "Developed ML training pipelines using Airflow.",
+        "Visualized model performance with Google Data Studio."
       ],
       "start": "07/2018",
       "end": "12/2018"

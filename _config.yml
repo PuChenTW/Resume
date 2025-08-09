@@ -1,0 +1,35 @@
+title: Pu Chen - Software Engineer
+description: Professional resume and portfolio of Pu Chen, Software Engineer with 5+ years of experience in Python, JavaScript, Machine Learning, and Cloud Development.
+author: Pu Chen
+email: puchen.tw@gmail.com
+baseurl: ""
+url: "https://puchentw.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# GitHub Pages settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+lang: en_US
+twitter:
+  username: PuChenTW
+social:
+  name: Pu Chen
+  links:
+    - https://github.com/PuChenTW
+    - https://www.linkedin.com/in/%E7%92%9E-%E9%99%B3-ba2a8a15a/
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

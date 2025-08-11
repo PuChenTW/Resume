@@ -48,6 +48,10 @@ class LanguageSwitcher {
         // Update page title
         const title = lang === 'zh' ? '陳璞 - 軟體工程師' : 'Pu Chen - Software Engineer';
         document.title = title;
+
+        // Emit language change event
+        const languageEvent = new CustomEvent('languageChanged', { detail: { language: lang } });
+        document.dispatchEvent(languageEvent);
     }
 }
 
@@ -83,6 +87,54 @@ document.addEventListener('DOMContentLoaded', () => {
                 aiToggleBtn.setAttribute('aria-expanded', 'false');
             }
         });
+    }
+
+    // AI Perspective expand/collapse functionality
+    const aiExpandBtn = document.getElementById('aiExpandBtn');
+    const aiContentShort = document.getElementById('aiContentShort');
+    const aiContentLong = document.getElementById('aiContentLong');
+    
+    if (aiExpandBtn && aiContentShort && aiContentLong) {
+        let isExpanded = false;
+        
+        aiExpandBtn.addEventListener('click', () => {
+            const languageSwitcher = new LanguageSwitcher();
+            const currentLang = languageSwitcher.currentLang;
+            
+            if (isExpanded) {
+                // Show short version
+                aiContentLong.classList.add('hidden');
+                aiContentShort.classList.remove('hidden');
+                
+                const collapseText = aiExpandBtn.getAttribute(`data-${currentLang}-expand`);
+                aiExpandBtn.textContent = collapseText;
+                
+                isExpanded = false;
+            } else {
+                // Show long version
+                aiContentShort.classList.add('hidden');
+                aiContentLong.classList.remove('hidden');
+                
+                const expandText = aiExpandBtn.getAttribute(`data-${currentLang}-collapse`);
+                aiExpandBtn.textContent = expandText;
+                
+                isExpanded = true;
+            }
+        });
+        
+        // Initialize button text based on current language
+        const initializeExpandButton = () => {
+            const languageSwitcher = new LanguageSwitcher();
+            const currentLang = languageSwitcher.currentLang;
+            const expandText = aiExpandBtn.getAttribute(`data-${currentLang}-expand`);
+            aiExpandBtn.textContent = expandText;
+        };
+        
+        // Initialize button text
+        setTimeout(initializeExpandButton, 100);
+        
+        // Update button text when language changes
+        document.addEventListener('languageChanged', initializeExpandButton);
     }
 
     // Add smooth scrolling for better UX

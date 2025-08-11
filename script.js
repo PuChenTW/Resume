@@ -56,16 +56,31 @@ document.addEventListener('DOMContentLoaded', () => {
     new LanguageSwitcher();
 
     // AI Perspective toggle functionality
+    const ANIMATION_DURATION = 400;
+    const SCROLL_DELAY = 50;
+    
     const aiToggleBtn = document.getElementById('aiToggleBtn');
     const aiPerspective = document.getElementById('aiPerspective');
     
     if (aiToggleBtn && aiPerspective) {
         aiToggleBtn.addEventListener('click', () => {
-            if (aiPerspective.style.display === 'none') {
-                aiPerspective.style.display = 'block';
-                aiPerspective.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Add click animation
+            aiToggleBtn.classList.add('clicked');
+            setTimeout(() => {
+                aiToggleBtn.classList.remove('clicked');
+            }, ANIMATION_DURATION);
+            
+            const isHidden = aiPerspective.classList.contains('hidden');
+            
+            if (isHidden) {
+                aiPerspective.classList.remove('hidden');
+                aiToggleBtn.setAttribute('aria-expanded', 'true');
+                setTimeout(() => {
+                    aiPerspective.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, SCROLL_DELAY);
             } else {
-                aiPerspective.style.display = 'none';
+                aiPerspective.classList.add('hidden');
+                aiToggleBtn.setAttribute('aria-expanded', 'false');
             }
         });
     }

@@ -137,6 +137,30 @@ h2::after {
     font-size: 1.1rem;
     line-height: 1.7;
     color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.ai-toggle-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+    letter-spacing: 0.5px;
+}
+
+.ai-toggle-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.ai-toggle-btn:active {
+    transform: translateY(0);
 }
 
 .job {

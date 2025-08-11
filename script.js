@@ -55,6 +55,21 @@ class LanguageSwitcher {
 document.addEventListener('DOMContentLoaded', () => {
     new LanguageSwitcher();
 
+    // AI Perspective toggle functionality
+    const aiToggleBtn = document.getElementById('aiToggleBtn');
+    const aiPerspective = document.getElementById('aiPerspective');
+    
+    if (aiToggleBtn && aiPerspective) {
+        aiToggleBtn.addEventListener('click', () => {
+            if (aiPerspective.style.display === 'none') {
+                aiPerspective.style.display = 'block';
+                aiPerspective.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                aiPerspective.style.display = 'none';
+            }
+        });
+    }
+
     // Add smooth scrolling for better UX
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {

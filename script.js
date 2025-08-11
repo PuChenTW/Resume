@@ -48,24 +48,20 @@ class LanguageSwitcher {
         // Update page title
         const title = lang === 'zh' ? '陳璞 - 軟體工程師' : 'Pu Chen - Software Engineer';
         document.title = title;
-
-        // Emit language change event
-        const languageEvent = new CustomEvent('languageChanged', { detail: { language: lang } });
-        document.dispatchEvent(languageEvent);
     }
 }
 
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new LanguageSwitcher();
+    const languageSwitcher = new LanguageSwitcher();
 
     // AI Perspective toggle functionality
     const ANIMATION_DURATION = 400;
     const SCROLL_DELAY = 50;
-    
+
     const aiToggleBtn = document.getElementById('aiToggleBtn');
     const aiPerspective = document.getElementById('aiPerspective');
-    
+
     if (aiToggleBtn && aiPerspective) {
         aiToggleBtn.addEventListener('click', () => {
             // Add click animation
@@ -73,9 +69,9 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 aiToggleBtn.classList.remove('clicked');
             }, ANIMATION_DURATION);
-            
+
             const isHidden = aiPerspective.classList.contains('hidden');
-            
+
             if (isHidden) {
                 aiPerspective.classList.remove('hidden');
                 aiToggleBtn.setAttribute('aria-expanded', 'true');
@@ -93,48 +89,42 @@ document.addEventListener('DOMContentLoaded', () => {
     const aiExpandBtn = document.getElementById('aiExpandBtn');
     const aiContentShort = document.getElementById('aiContentShort');
     const aiContentLong = document.getElementById('aiContentLong');
-    
+
     if (aiExpandBtn && aiContentShort && aiContentLong) {
         let isExpanded = false;
-        
+
         aiExpandBtn.addEventListener('click', () => {
-            const languageSwitcher = new LanguageSwitcher();
             const currentLang = languageSwitcher.currentLang;
-            
+
             if (isExpanded) {
-                // Show short version
-                aiContentLong.classList.add('hidden');
-                aiContentShort.classList.remove('hidden');
-                
-                const collapseText = aiExpandBtn.getAttribute(`data-${currentLang}-expand`);
-                aiExpandBtn.textContent = collapseText;
-                
+                // Hide long version, keep short version
+                aiContentLong.classList.remove('show');
+
+                const expandText = aiExpandBtn.getAttribute(`data-${currentLang}-expand`);
+                aiExpandBtn.textContent = expandText;
+
                 isExpanded = false;
             } else {
-                // Show long version
-                aiContentShort.classList.add('hidden');
-                aiContentLong.classList.remove('hidden');
-                
-                const expandText = aiExpandBtn.getAttribute(`data-${currentLang}-collapse`);
-                aiExpandBtn.textContent = expandText;
-                
+                // Show long version below short version
+                aiContentLong.classList.add('show');
+
+                const collapseText = aiExpandBtn.getAttribute(`data-${currentLang}-collapse`);
+                aiExpandBtn.textContent = collapseText;
+
                 isExpanded = true;
             }
         });
-        
+
         // Initialize button text based on current language
         const initializeExpandButton = () => {
-            const languageSwitcher = new LanguageSwitcher();
             const currentLang = languageSwitcher.currentLang;
             const expandText = aiExpandBtn.getAttribute(`data-${currentLang}-expand`);
             aiExpandBtn.textContent = expandText;
         };
-        
+
         // Initialize button text
         setTimeout(initializeExpandButton, 100);
-        
-        // Update button text when language changes
-        document.addEventListener('languageChanged', initializeExpandButton);
+
     }
 
     // Add smooth scrolling for better UX

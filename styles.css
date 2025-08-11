@@ -204,8 +204,25 @@ h2::after {
     overflow: hidden;
 }
 
-.ai-content-long.hidden {
-    display: none;
+/* Fade in/out animation */
+.ai-content-short {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.ai-content-long {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.ai-content-long.show {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
 }
 
 .expand-btn {
@@ -566,23 +583,23 @@ h2::after {
     body {
         background: white;
     }
-    
+
     .container {
         box-shadow: none;
         max-width: none;
     }
-    
+
     .header {
         background: #667eea !important;
         -webkit-print-color-adjust: exact;
-        color-adjust: exact;
+        print-color-adjust: exact;
     }
-    
+
     .job:hover {
         transform: none;
         box-shadow: none;
     }
-    
+
     .tag:hover {
         transform: none;
     }

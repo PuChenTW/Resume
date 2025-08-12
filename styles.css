@@ -533,6 +533,14 @@ h2::after {
     main {
         padding: 1rem;
     }
+    
+    /* Make Behind the Scenes link more compact on mobile */
+    .ai-perspective p:last-child a {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.75rem;
+        border-radius: 15px;
+        letter-spacing: 0.1px;
+    }
 }
 
 /* AI Behind the Scenes Link Styling */

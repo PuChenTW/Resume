@@ -90,3 +90,4 @@ Additional interactive functionality:
 - GitHub Pages compatible
 - Jekyll plugins: jekyll-feed, jekyll-sitemap, jekyll-seo-tag
 - No Node.js dependencies or build process
+- Always use Playwright to verify UI/UX functionality after implementing new features.

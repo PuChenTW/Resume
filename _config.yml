@@ -31,6 +31,9 @@ social:
     - https://github.com/PuChenTW
     - https://www.linkedin.com/in/%E7%92%9E-%E9%99%B3-ba2a8a15a/
 
+# Google Analytics
+google_analytics: G-PT8DBMBCG8
+
 # Exclude files from processing
 exclude:
   - README.md

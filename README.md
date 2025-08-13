@@ -15,7 +15,7 @@
 *July 2023 - Present*
 
 - Led a cross-functional team of 4 engineers to architect, develop, and maintain scalable data pipelines and Retrieval-Augmented Generation (RAG) applications.
-- Designed and implemented automated CI/CD workflows for data and AI pipelines using GitHub Actions, Terraform, and AWS SageMaker, reducing deployment time by 60% and improving system reliability.
+- Built and maintained end-to-end data pipelines using Dagster for orchestration, Airbyte for data ingestion, and dbt for transformation, ensuring high reliability and data quality across production systems.
 - Integrated Large Language Models (LLMs) with GitHub/Jira APIs and developed Chrome extensions to automate product release workflows, accelerating development cycles by 40%.
 - Orchestrated cloud-native application deployments on Kubernetes using Helm and ArgoCD; architected and deployed MLflow service on GCP with Pulumi for ML lifecycle management.
 - Built and optimized a real-time audio-to-facial blendshape model using PyTorch and ONNX, achieving 30% performance improvement while reducing computational costs.

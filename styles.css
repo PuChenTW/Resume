@@ -612,3 +612,172 @@ h2::after {
         transform: none;
     }
 }
+
+/* SVG Modal Styles */
+.view-diagram-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.view-diagram-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.view-diagram-btn:active {
+    transform: translateY(0);
+}
+
+.view-diagram-btn i {
+    font-size: 1rem;
+}
+
+.svg-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.svg-modal.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.svg-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.svg-modal-content {
+    position: relative;
+    margin: auto;
+    background: white;
+    border-radius: 8px;
+    max-width: 95vw;
+    max-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.svg-modal.active .svg-modal-content {
+    transform: scale(1);
+}
+
+.svg-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #eee;
+    background: #d1cee2;
+    color: white;
+}
+
+.svg-modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.svg-modal-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.svg-modal-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(90deg);
+}
+
+.svg-modal-body {
+    padding: 1rem;
+    overflow: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.svg-modal-body img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal responsive styles */
+@media (max-width: 768px) {
+    .svg-modal-content {
+        max-width: 98vw;
+        max-height: 98vh;
+        margin: 1rem;
+    }
+
+    .svg-modal-header {
+        padding: 1rem 1.5rem;
+    }
+
+    .svg-modal-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .view-diagram-btn {
+        font-size: 0.8rem;
+        padding: 0.7rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .svg-modal-header {
+        padding: 0.8rem 1rem;
+    }
+
+    .svg-modal-header h2 {
+        font-size: 1rem;
+    }
+
+    .svg-modal-body {
+        padding: 0.5rem;
+    }
+
+    .view-diagram-btn {
+        font-size: 0.75rem;
+        padding: 0.6rem 1rem;
+    }
+}

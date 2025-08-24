@@ -127,6 +127,56 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+    // SVG Modal functionality
+    const viewDiagramBtn = document.getElementById('viewDiagramBtn');
+    const svgModal = document.getElementById('svgModal');
+    const svgModalClose = document.getElementById('svgModalClose');
+    const svgModalOverlay = document.getElementById('svgModalOverlay');
+
+    if (viewDiagramBtn && svgModal && svgModalClose && svgModalOverlay) {
+        // Open modal
+        viewDiagramBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            svgModal.classList.add('active');
+            svgModal.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+
+            // Focus on close button for accessibility
+            setTimeout(() => {
+                svgModalClose.focus();
+            }, 300);
+        });
+
+        // Close modal function
+        const closeModal = () => {
+            svgModal.classList.remove('active');
+            svgModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = ''; // Restore scrolling
+            viewDiagramBtn.focus(); // Return focus to trigger button
+        };
+
+        // Close modal with close button
+        svgModalClose.addEventListener('click', closeModal);
+
+        // Close modal with overlay click
+        svgModalOverlay.addEventListener('click', closeModal);
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && svgModal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+
+        // Prevent modal content click from closing modal
+        const svgModalContent = svgModal.querySelector('.svg-modal-content');
+        if (svgModalContent) {
+            svgModalContent.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        }
+    }
+
     // Add smooth scrolling for better UX
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {

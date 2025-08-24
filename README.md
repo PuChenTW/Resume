@@ -49,6 +49,17 @@ Software engineer and hands-on engineering manager with 6+ years building data/M
 - Developed ML training pipelines using Airflow.
 - Visualized model performance with Google Data Studio.
 
+## Projects
+
+### Data Pipeline Architecture | XRSPACE
+Designed and implemented a comprehensive end-to-end data pipeline architecture supporting analytics, machine learning workflows, and real-time data processing. The system orchestrates data ingestion from multiple sources (MongoDB, PostgreSQL, mobile app stores) using Airbyte for extraction, Dagster for workflow orchestration, and dbt for data transformation. Integrated with Google Analytics and various downstream analytics services to provide actionable insights for product development and user behavior analysis.
+
+### E-commerce Recommendation System | Changing.AI
+We built a recommendation system for one of the top 3 e-commerce websites in Taiwan. The system uses Fluentd and ElasticSearch to collect real time log of user behavior. The data will be extracted, transformed and trained the Deep Learning recommendation engine automatically using Airflow. In order to deal with the massive loading of e-commerce websites, we use Kubernetes and Docker to deploy and auto-scale the server. Our system has increased the click-through rate and conversion rate by about 200%.
+
+### E-commerce Search Engine | Changing.AI
+We built an e-commerce search engine using ElasticSearch and Bert Deep Learning model. Our Engine reduces errors by more than 40%.
+
 ## Education
 
 ### Master, Computer Science | National Central University
@@ -56,6 +67,11 @@ Software engineer and hands-on engineering manager with 6+ years building data/M
 
 ### Bachelor, Computer Science | Yuan Ze University
 *2012 - 2016*
+
+## Publications
+
+**Differentiating Regularization Weights – a Simple Mechanism to Alleviate Cold Start in Recommender Systems**  
+*TKDD ACM Transactions on Knowledge Discovery from Data 13(1), 2019*
 
 ## Skills
 
@@ -80,24 +96,6 @@ git • Docker • Airbytes • AirFlow • Dagster • DBT • Kubernetes • L
 
 ### Databases
 BigQuery • Mongodb • ElasticSearch • PostgresSQL • MySQL
-
-## Projects
-
-### E-commerce Recommendation System | Changing.AI
-We built a recommendation system for one of the top 3 e-commerce websites in Taiwan. The system uses Fluentd and ElasticSearch to collect real time log of user behavior. The data will be extracted, transformed and trained the Deep Learning recommendation engine automatically using Airflow. In order to deal with the massive loading of e-commerce websites, we use Kubernetes and Docker to deploy and auto-scale the server. Our system has increased the click-through rate and conversion rate by about 200%.
-
-### E-commerce Search Engine | Changing.AI
-We built an e-commerce search engine using ElasticSearch and Bert Deep Learning model. Our Engine reduces errors by more than 40%.
-
-### ChatGPT Chrome Extension | Personal side project
-[GitHub](https://github.com/PuChenTW/gpt-extension)
-
-This is a Google Chrome extension that provides a quick and easy way to check the grammar of text on websites. Users can also define their own prompts in the options page to let the extension do other tasks, such as code review or creating an abstract for the article.
-
-## Publications
-
-**Differentiating Regularization Weights – a Simple Mechanism to Alleviate Cold Start in Recommender Systems**  
-*TKDD ACM Transactions on Knowledge Discovery from Data 13(1), 2019*
 
 ## Contact
 

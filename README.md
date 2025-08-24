@@ -7,7 +7,7 @@
 
 ## Summary
 
-5+ years experience in software development. Skilled in Python, Javascript, Software Development, Machine Learning, Software Testing and Debugging. Experienced in rapid prototyping using open-source software. Familiar with Cloud Application Development. Enjoy solving problems by coding.
+Software engineer and hands-on engineering manager with 6+ years building data/ML and backend systems. Led a 4-engineer team delivering cloud-native apps and RAG products; designed reliable ELT/ML pipelines (Dagster, Airbyte, dbt, MLflow) and automated release workflows with LLMs and Chrome extensions. Strong in Python, JavaScript, and GCP/Kubernetes (Helm, ArgoCD). Shipped real-time audio-to-blendshape models (PyTorch/ONNX). Achieved ~200% CTR/conversion uplift on an e-commerce recommender and reduced search errors by 40% on a separate search project. Pragmatic, fast-iterating, and product-minded.
 
 ## Experience
 

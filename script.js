@@ -718,7 +718,7 @@ class PresentationMode {
         this.currentSlide = 0;
         this.slides = [];
         this.isActive = false;
-        this.maxSlidesPerComponent = 5;
+        this.maxSlidesPerComponent = 4;
 
         // DOM elements
         this.presentationBtn = document.getElementById('presentationBtn');

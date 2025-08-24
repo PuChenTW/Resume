@@ -22,6 +22,11 @@
             <button class="lang-btn active" data-lang="en">English</button>
             <button class="lang-btn" data-lang="zh">中文</button>
         </div>
+        <div class="presentation-switcher">
+            <button class="presentation-btn" id="presentationBtn" 
+                    data-en="Presentation Mode" 
+                    data-zh="簡報模式">Presentation Mode</button>
+        </div>
         <header class="header">
             <h1>Pu Chen</h1>
             <p class="title" data-en="Software Engineer" data-zh="軟體工程師">Software Engineer</p>
@@ -323,6 +328,35 @@
             </div>
             <div class="svg-modal-body">
                 <img src="data_pipeline.svg" alt="Data Pipeline Architecture Diagram" id="svgImage" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Presentation Mode Modal -->
+    <div class="presentation-modal" id="presentationModal" role="dialog" aria-labelledby="presentationTitle" aria-hidden="true">
+        <div class="presentation-modal-overlay" id="presentationModalOverlay"></div>
+        <div class="presentation-modal-content">
+            <div class="presentation-header">
+                <div class="presentation-progress">
+                    <div class="presentation-progress-bar" id="presentationProgressBar"></div>
+                </div>
+                <button class="presentation-close" id="presentationClose" aria-label="Exit presentation mode" type="button">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="presentation-body" id="presentationBody">
+                <!-- Slides will be dynamically generated here -->
+            </div>
+            <div class="presentation-navigation">
+                <button class="nav-btn nav-prev" id="presentationPrev" aria-label="Previous slide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slide-indicators" id="slideIndicators">
+                    <!-- Indicators will be dynamically generated -->
+                </div>
+                <button class="nav-btn nav-next" id="presentationNext" aria-label="Next slide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </div>

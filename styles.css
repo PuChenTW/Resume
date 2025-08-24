@@ -11,6 +11,42 @@ body {
     background-color: #f8f9fa;
 }
 
+body.loading {
+    overflow: hidden;
+}
+
+body.loading::after {
+    content: 'Loading...';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(248, 249, 250, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    z-index: 9999;
+}
+
+.error-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f8d7da;
+    color: #721c24;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #f5c6cb;
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 500px;
+    z-index: 9999;
+}
+
 .container {
     max-width: 900px;
     margin: 0 auto;

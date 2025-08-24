@@ -1,3 +1,469 @@
+// Data loading and injection for resume site
+class DataLoader {
+    constructor() {
+        this.data = null;
+        this.isLoaded = false;
+    }
+
+    async loadData() {
+        try {
+            const response = await fetch('./data.json');
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            this.data = await response.json();
+            this.isLoaded = true;
+            return this.data;
+        } catch (error) {
+            console.error('Failed to load data:', error);
+            throw error;
+        }
+    }
+
+    getData() {
+        if (!this.isLoaded) {
+            throw new Error('Data not loaded yet. Call loadData() first.');
+        }
+        return this.data;
+    }
+}
+
+// Data injection utilities
+class DataRenderer {
+    constructor(data, languageSwitcher) {
+        this.data = data;
+        this.languageSwitcher = languageSwitcher;
+    }
+
+    renderHeader() {
+        const header = document.querySelector('.header');
+        if (!header) return;
+
+        const nameElement = header.querySelector('h1');
+        const titleElement = header.querySelector('.title');
+        const contactContainer = header.querySelector('.contact');
+
+        if (nameElement) {
+            nameElement.textContent = this.data.personal.name;
+        }
+
+        if (titleElement) {
+            titleElement.setAttribute('data-en', this.data.personal.title.en);
+            titleElement.setAttribute('data-zh', this.data.personal.title.zh);
+        }
+
+        if (contactContainer) {
+            contactContainer.innerHTML = '';
+            this.data.personal.contact.forEach(contact => {
+                const contactItem = document.createElement('div');
+                contactItem.className = 'contact-item';
+
+                const icon = document.createElement('i');
+                icon.className = contact.icon;
+                contactItem.appendChild(icon);
+
+                if (contact.link) {
+                    const link = document.createElement('a');
+                    link.href = contact.link;
+                    link.textContent = contact.text;
+                    if (contact.target) {
+                        link.target = contact.target;
+                    }
+                    contactItem.appendChild(link);
+                } else {
+                    const span = document.createElement('span');
+                    span.textContent = contact.text;
+                    contactItem.appendChild(span);
+                }
+
+                contactContainer.appendChild(contactItem);
+            });
+        }
+    }
+
+    renderSummary() {
+        const summarySection = document.querySelector('.summary');
+        if (!summarySection) return;
+
+        const titleElement = summarySection.querySelector('h2');
+        const contentElement = summarySection.querySelector('p');
+        const toggleButton = summarySection.querySelector('.ai-toggle-btn');
+
+        if (titleElement) {
+            titleElement.setAttribute('data-en', this.data.summary.title.en);
+            titleElement.setAttribute('data-zh', this.data.summary.title.zh);
+        }
+
+        if (contentElement) {
+            contentElement.setAttribute('data-en', this.data.summary.content.en);
+            contentElement.setAttribute('data-zh', this.data.summary.content.zh);
+        }
+
+        if (toggleButton) {
+            toggleButton.setAttribute('data-en', this.data.summary.aiToggleButton.en);
+            toggleButton.setAttribute('data-zh', this.data.summary.aiToggleButton.zh);
+        }
+    }
+
+    renderAIPerspective() {
+        const aiSection = document.querySelector('.ai-perspective');
+        if (!aiSection) return;
+
+        const titleElement = aiSection.querySelector('h2');
+        const shortContent = aiSection.querySelector('#aiContentShort p');
+        const longContent = aiSection.querySelector('#aiContentLong');
+        const expandButton = aiSection.querySelector('#aiExpandBtn');
+        const attributionLink = aiSection.querySelector('a[target="_blank"]');
+
+        if (titleElement) {
+            titleElement.setAttribute('data-en', this.data.aiPerspective.title.en);
+            titleElement.setAttribute('data-zh', this.data.aiPerspective.title.zh);
+        }
+
+        if (shortContent) {
+            shortContent.setAttribute('data-en', this.data.aiPerspective.shortContent.en);
+            shortContent.setAttribute('data-zh', this.data.aiPerspective.shortContent.zh);
+        }
+
+        if (longContent) {
+            const paragraphs = this.data.aiPerspective.longContent.en.split('\n\n');
+            const zhParagraphs = this.data.aiPerspective.longContent.zh.split('\n\n');
+
+            longContent.innerHTML = '';
+            paragraphs.forEach((paragraph, index) => {
+                if (paragraph.trim()) {
+                    const br = document.createElement('br');
+                    const p = document.createElement('p');
+                    p.setAttribute('data-en', paragraph.trim());
+                    p.setAttribute('data-zh', zhParagraphs[index] ? zhParagraphs[index].trim() : paragraph.trim());
+                    longContent.appendChild(br);
+                    longContent.appendChild(p);
+                }
+            });
+        }
+
+        if (expandButton) {
+            expandButton.setAttribute('data-en-expand', this.data.aiPerspective.expandButton.expand.en);
+            expandButton.setAttribute('data-en-collapse', this.data.aiPerspective.expandButton.collapse.en);
+            expandButton.setAttribute('data-zh-expand', this.data.aiPerspective.expandButton.expand.zh);
+            expandButton.setAttribute('data-zh-collapse', this.data.aiPerspective.expandButton.collapse.zh);
+        }
+
+        if (attributionLink) {
+            attributionLink.href = this.data.aiPerspective.attributionLink;
+            attributionLink.setAttribute('data-en', this.data.aiPerspective.attribution.en);
+            attributionLink.setAttribute('data-zh', this.data.aiPerspective.attribution.zh);
+        }
+    }
+
+    renderExperience() {
+        const experienceSection = document.querySelector('.experience');
+        if (!experienceSection) return;
+
+        const titleElement = experienceSection.querySelector('h2');
+        if (titleElement) {
+            titleElement.setAttribute('data-en', this.data.experience.title.en);
+            titleElement.setAttribute('data-zh', this.data.experience.title.zh);
+        }
+
+        // Remove existing job elements
+        const existingJobs = experienceSection.querySelectorAll('.job');
+        existingJobs.forEach(job => job.remove());
+
+        // Create job elements from data
+        this.data.experience.jobs.forEach(jobData => {
+            const jobElement = document.createElement('div');
+            jobElement.className = 'job';
+
+            const jobHeader = document.createElement('div');
+            jobHeader.className = 'job-header';
+
+            const titleElement = document.createElement('h3');
+            titleElement.setAttribute('data-en', jobData.title.en);
+            titleElement.setAttribute('data-zh', jobData.title.zh);
+
+            const companyElement = document.createElement('span');
+            companyElement.className = 'company';
+            companyElement.textContent = jobData.company;
+
+            const periodElement = document.createElement('span');
+            periodElement.className = 'period';
+            periodElement.setAttribute('data-en', jobData.period.en);
+            periodElement.setAttribute('data-zh', jobData.period.zh);
+
+            jobHeader.appendChild(titleElement);
+            jobHeader.appendChild(companyElement);
+            jobHeader.appendChild(periodElement);
+
+            const achievementsList = document.createElement('ul');
+            jobData.achievements.forEach(achievement => {
+                const li = document.createElement('li');
+                li.setAttribute('data-en', achievement.en);
+                li.setAttribute('data-zh', achievement.zh);
+                achievementsList.appendChild(li);
+            });
+
+            jobElement.appendChild(jobHeader);
+            jobElement.appendChild(achievementsList);
+            experienceSection.appendChild(jobElement);
+        });
+    }
+
+    renderProjects() {
+        const projectsSection = document.querySelector('.projects');
+        if (!projectsSection) return;
+
+        const titleElement = projectsSection.querySelector('h2');
+        if (titleElement) {
+            titleElement.setAttribute('data-en', this.data.projects.title.en);
+            titleElement.setAttribute('data-zh', this.data.projects.title.zh);
+        }
+
+        // Remove existing project elements
+        const existingProjects = projectsSection.querySelectorAll('.project');
+        existingProjects.forEach(project => project.remove());
+
+        // Create project elements from data
+        this.data.projects.items.forEach(projectData => {
+            const projectElement = document.createElement('div');
+            projectElement.className = 'project';
+
+            const titleElement = document.createElement('h3');
+            titleElement.setAttribute('data-en', projectData.title.en);
+            titleElement.setAttribute('data-zh', projectData.title.zh);
+
+            const companyElement = document.createElement('span');
+            companyElement.className = 'company';
+            if (typeof projectData.company === 'string') {
+                companyElement.textContent = projectData.company;
+            } else {
+                companyElement.setAttribute('data-en', projectData.company.en);
+                companyElement.setAttribute('data-zh', projectData.company.zh);
+            }
+
+            projectElement.appendChild(titleElement);
+            projectElement.appendChild(companyElement);
+
+            // Add project links if they exist
+            if (projectData.links) {
+                const linksDiv = document.createElement('div');
+                linksDiv.className = 'project-links';
+
+                projectData.links.forEach(link => {
+                    if (link.type === 'diagram') {
+                        const button = document.createElement('button');
+                        button.className = 'view-diagram-btn';
+                        button.id = 'viewDiagramBtn';
+                        button.setAttribute('data-en', link.text.en);
+                        button.setAttribute('data-zh', link.text.zh);
+
+                        const icon = document.createElement('i');
+                        icon.className = link.icon;
+
+                        const span = document.createElement('span');
+                        span.setAttribute('data-en', link.text.en);
+                        span.setAttribute('data-zh', link.text.zh);
+
+                        button.appendChild(icon);
+                        button.appendChild(document.createTextNode(' '));
+                        button.appendChild(span);
+                        linksDiv.appendChild(button);
+                    } else if (link.type === 'github') {
+                        const linkElement = document.createElement('a');
+                        linkElement.href = link.url;
+                        linkElement.target = '_blank';
+
+                        const icon = document.createElement('i');
+                        icon.className = link.icon;
+
+                        linkElement.appendChild(icon);
+                        linkElement.appendChild(document.createTextNode(' ' + link.text));
+                        linksDiv.appendChild(linkElement);
+                    }
+                });
+
+                projectElement.appendChild(linksDiv);
+            }
+
+            const descriptionElement = document.createElement('p');
+            descriptionElement.setAttribute('data-en', projectData.description.en);
+            descriptionElement.setAttribute('data-zh', projectData.description.zh);
+
+            projectElement.appendChild(descriptionElement);
+            projectsSection.appendChild(projectElement);
+        });
+    }
+
+    renderEducation() {
+        const educationSection = document.querySelector('.education');
+        if (!educationSection) return;
+
+        const titleElement = educationSection.querySelector('h2');
+        if (titleElement) {
+            titleElement.setAttribute('data-en', this.data.education.title.en);
+            titleElement.setAttribute('data-zh', this.data.education.title.zh);
+        }
+
+        // Remove existing education items
+        const existingItems = educationSection.querySelectorAll('.education-item');
+        existingItems.forEach(item => item.remove());
+
+        // Create education items from data
+        this.data.education.items.forEach(eduData => {
+            const eduElement = document.createElement('div');
+            eduElement.className = 'education-item';
+
+            const degreeElement = document.createElement('h3');
+            degreeElement.setAttribute('data-en', eduData.degree.en);
+            degreeElement.setAttribute('data-zh', eduData.degree.zh);
+
+            const institutionElement = document.createElement('span');
+            institutionElement.className = 'institution';
+            institutionElement.setAttribute('data-en', eduData.institution.en);
+            institutionElement.setAttribute('data-zh', eduData.institution.zh);
+
+            const periodElement = document.createElement('span');
+            periodElement.className = 'period';
+            periodElement.textContent = eduData.period;
+
+            eduElement.appendChild(degreeElement);
+            eduElement.appendChild(institutionElement);
+            eduElement.appendChild(periodElement);
+            educationSection.appendChild(eduElement);
+        });
+    }
+
+    renderSkills() {
+        const skillsSection = document.querySelector('.skills');
+        if (!skillsSection) return;
+
+        const titleElement = skillsSection.querySelector('h2');
+        if (titleElement) {
+            titleElement.setAttribute('data-en', this.data.skills.title.en);
+            titleElement.setAttribute('data-zh', this.data.skills.title.zh);
+        }
+
+        const skillsGrid = skillsSection.querySelector('.skills-grid');
+        if (skillsGrid) {
+            skillsGrid.innerHTML = '';
+
+            this.data.skills.categories.forEach(category => {
+                const categoryElement = document.createElement('div');
+                categoryElement.className = 'skill-category';
+
+                const categoryTitle = document.createElement('h3');
+                categoryTitle.setAttribute('data-en', category.title.en);
+                categoryTitle.setAttribute('data-zh', category.title.zh);
+                categoryElement.appendChild(categoryTitle);
+
+                if (category.displayType === 'tags') {
+                    const tagsDiv = document.createElement('div');
+                    tagsDiv.className = 'tech-tags';
+
+                    category.items.forEach(item => {
+                        const tag = document.createElement('span');
+                        tag.className = 'tag';
+                        tag.textContent = item;
+                        tagsDiv.appendChild(tag);
+                    });
+
+                    categoryElement.appendChild(tagsDiv);
+                } else {
+                    const itemsList = document.createElement('ul');
+
+                    category.items.forEach(item => {
+                        const li = document.createElement('li');
+                        if (typeof item === 'string') {
+                            li.textContent = item;
+                        } else {
+                            li.setAttribute('data-en', item.en);
+                            li.setAttribute('data-zh', item.zh);
+                        }
+                        itemsList.appendChild(li);
+                    });
+
+                    categoryElement.appendChild(itemsList);
+                }
+
+                skillsGrid.appendChild(categoryElement);
+            });
+        }
+    }
+
+    renderPublications() {
+        const publicationsSection = document.querySelector('.publications');
+        if (!publicationsSection) return;
+
+        const titleElement = publicationsSection.querySelector('h2');
+        if (titleElement) {
+            titleElement.setAttribute('data-en', this.data.publications.title.en);
+            titleElement.setAttribute('data-zh', this.data.publications.title.zh);
+        }
+
+        // Remove existing publications
+        const existingPubs = publicationsSection.querySelectorAll('.publication');
+        existingPubs.forEach(pub => pub.remove());
+
+        // Create publication elements from data
+        this.data.publications.items.forEach(pubData => {
+            const pubElement = document.createElement('div');
+            pubElement.className = 'publication';
+
+            const titleElement = document.createElement('h3');
+            const linkElement = document.createElement('a');
+            linkElement.href = pubData.url;
+            linkElement.target = '_blank';
+            linkElement.textContent = pubData.title;
+            titleElement.appendChild(linkElement);
+
+            const venueElement = document.createElement('p');
+            venueElement.className = 'publication-venue';
+            venueElement.textContent = pubData.venue;
+
+            pubElement.appendChild(titleElement);
+            pubElement.appendChild(venueElement);
+            publicationsSection.appendChild(pubElement);
+        });
+    }
+
+    renderUI() {
+        // Update language switcher buttons
+        const langButtons = document.querySelectorAll('.lang-btn');
+        langButtons.forEach(button => {
+            const lang = button.getAttribute('data-lang');
+            if (lang && this.data.ui.languages[lang]) {
+                button.textContent = this.data.ui.languages[lang];
+            }
+        });
+
+        // Update presentation mode button
+        const presentationBtn = document.querySelector('.presentation-btn');
+        if (presentationBtn) {
+            presentationBtn.setAttribute('data-en', this.data.ui.presentationMode.en);
+            presentationBtn.setAttribute('data-zh', this.data.ui.presentationMode.zh);
+        }
+
+        // Update SVG modal title
+        const svgModalTitle = document.querySelector('#svgModalTitle');
+        if (svgModalTitle) {
+            svgModalTitle.setAttribute('data-en', this.data.ui.svgModal.title.en);
+            svgModalTitle.setAttribute('data-zh', this.data.ui.svgModal.title.zh);
+        }
+    }
+
+    renderAll() {
+        this.renderHeader();
+        this.renderSummary();
+        this.renderAIPerspective();
+        this.renderExperience();
+        this.renderProjects();
+        this.renderEducation();
+        this.renderSkills();
+        this.renderPublications();
+        this.renderUI();
+    }
+}
+
 // Multi-language support for the resume site
 class LanguageSwitcher {
     constructor() {
@@ -52,8 +518,36 @@ class LanguageSwitcher {
 }
 
 // Initialize when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    const languageSwitcher = new LanguageSwitcher();
+document.addEventListener('DOMContentLoaded', async () => {
+    // Show loading indicator
+    const body = document.body;
+    body.classList.add('loading');
+
+    let languageSwitcher; // Declare in outer scope
+
+    try {
+        // Load data first
+        const dataLoader = new DataLoader();
+        const data = await dataLoader.loadData();
+
+        // Initialize language switcher
+        languageSwitcher = new LanguageSwitcher();
+
+        // Initialize data renderer and render all content
+        const dataRenderer = new DataRenderer(data, languageSwitcher);
+        dataRenderer.renderAll();
+
+        // Apply current language after rendering
+        languageSwitcher.setLanguage(languageSwitcher.currentLang);
+
+        // Hide loading indicator
+        body.classList.remove('loading');
+    } catch (error) {
+        console.error('Failed to initialize application:', error);
+        // Show error message to user
+        body.innerHTML = '<div class="error-message">Failed to load resume data. Please refresh the page.</div>';
+        return;
+    }
 
     // AI Perspective toggle functionality
     const ANIMATION_DURATION = 400;

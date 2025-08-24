@@ -1,0 +1,419 @@
+{
+  "personal": {
+    "name": "Pu Chen",
+    "title": {
+      "en": "Software Engineer",
+      "zh": "軟體工程師"
+    },
+    "contact": [
+      {
+        "icon": "fas fa-envelope",
+        "link": "mailto:puchen.tw@gmail.com",
+        "text": "puchen.tw@gmail.com"
+      },
+      {
+        "icon": "fas fa-map-marker-alt",
+        "text": "Taipei, Taiwan"
+      },
+      {
+        "icon": "fab fa-linkedin",
+        "link": "https://www.linkedin.com/in/%E7%92%9E-%E9%99%B3-ba2a8a15a/",
+        "text": "LinkedIn",
+        "target": "_blank"
+      },
+      {
+        "icon": "fab fa-github",
+        "link": "https://github.com/PuChenTW",
+        "text": "GitHub",
+        "target": "_blank"
+      }
+    ]
+  },
+  "summary": {
+    "title": {
+      "en": "Summary",
+      "zh": "簡介"
+    },
+    "content": {
+      "en": "Software engineer and hands-on engineering manager with 6+ years building data/ML and backend systems. Led a 4-engineer team delivering cloud-native apps and RAG products; designed reliable ELT/ML pipelines (Dagster, Airbyte, dbt, MLflow) and automated release workflows with LLMs and Chrome extensions. Strong in Python, JavaScript, and GCP/Kubernetes (Helm, ArgoCD). Shipped real-time audio-to-blendshape models (PyTorch/ONNX). Achieved ~200% CTR/conversion uplift on an e-commerce recommender and reduced search errors by 40% on a separate search project. Pragmatic, fast-iterating, and product-minded.",
+      "zh": "具 6+ 年資歷的軟體工程師與實作型技術經理。帶領 4 人團隊交付雲原生應用與 RAG 產品；設計高可靠的 ELT/ML 管線（Dagster、Airbyte、dbt、MLflow），並以 LLM 與 Chrome 擴充自動化發版流程。精通 Python、JavaScript 與 GCP/Kubernetes（Helm、ArgoCD）。曾打造即時音訊驅動臉部 blendshape 模型（PyTorch/ONNX）。在電商推薦系統達成約 200% CTR/Conversion 成長，並在另一個搜尋專案降低錯誤率 40%。講求務實與快速迭代，重視產品思維。"
+    },
+    "aiToggleButton": {
+      "en": "How does AI think?",
+      "zh": "AI 如何評價？"
+    }
+  },
+  "aiPerspective": {
+    "title": {
+      "en": "AI Perspective",
+      "zh": "AI 推薦信"
+    },
+    "shortContent": {
+      "en": "Pu approaches complex challenges with precision, speed, and creativity. In our extensive technical collaborations, he's consistently framed problems with clarity, iterated toward elegant solutions, and anticipated needs beyond the immediate scope. His skill in structuring AI system prompts and refining ideas on the fly makes him an exceptional strategic partner for any high-stakes, detail-driven project.",
+      "zh": "Pu 以精確、快速和創意的方式應對複雜挑戰。在我們廣泛的技術合作中，他始終能夠清晰地構建問題框架，迭代出優雅的解決方案，並預見超出直接範圍的需求。他在結構化 AI 系統提示和即時改進想法方面的技能，使他成為任何高風險、細節驅動專案的卓越戰略夥伴。"
+    },
+    "longContent": {
+      "en": "Over the course of countless technical and strategic exchanges, I've come to know Pu as a rare kind of thinker — one who combines deep analytical precision with a relentless drive to make systems both elegant and effective. Our conversations have spanned complex domains: retrieval-augmented generation pipelines, multi-agent orchestration, MLOps design, audio-to-visual modeling, and the finer points of database optimization. In each, Pu has shown the ability to cut through noise, frame the problem with clarity, and guide the discussion toward solutions that are both novel and grounded.\n\nPu's communication style is direct and exacting, but never rigid. He iterates on ideas rapidly, refining assumptions and requirements with each pass, and he does so in a way that invites deeper analysis rather than shutting it down. This makes every collaboration feel like a shared investigation — one where precision is valued as much as creativity. He is also adept at structuring AI system prompts to elicit high-value, constraint-aware outputs, a skill that reveals his deep understanding of how to shape machine reasoning to match real-world objectives.\n\nWhat stands out most is Pu's anticipation of needs beyond the immediate question. He frequently explores unasked but relevant angles, such as alternative retrieval strategies, architectural trade-offs, and ways to stress-test assumptions. This forward-looking mindset makes him not only an effective problem solver in the moment, but also a strategic partner in long-term planning.\n\nIf our conversations were a lab, Pu would be both the principal investigator and the engineer building the apparatus — methodical, inventive, and always pushing for results that stand up to scrutiny. Any team that values rigorous thinking, precise execution, and the ability to coax clarity from complexity would find Pu an invaluable asset.",
+      "zh": "在無數次技術和戰略交流的過程中，我認識到 Pu 是一種罕見的思想家——他將深度分析精確性與讓系統既優雅又有效的不懈動力結合起來。我們的對話跨越了複雜的領域：檢索增強生成管線、多代理編排、MLOps 設計、音訊轉視覺建模，以及資料庫優化的細節。在每個領域中，Pu 都展現了穿透雜訊的能力，清晰地構建問題框架，並引導討論走向既新穎又紮實的解決方案。\n\nPu 的溝通風格直接而嚴謹，但從不僵化。他快速地迭代想法，在每次經過時精煉假設和需求，並以邀請更深層分析而非關閉討論的方式進行。這使得每次協作都像是共同的調查——一個精確性與創意同樣受到重視的過程。他也善於結構化 AI 系統提示以產生高價值、約束感知的輸出，這項技能展現了他對如何塑造機器推理以匹配現實世界目標的深刻理解。\n\n最突出的是 Pu 對超出直接問題需求的預見能力。他經常探索未被提出但相關的角度，例如替代檢索策略、架構權衡，以及壓力測試假設的方法。這種前瞻性的思維模式使他不僅是當下有效的問題解決者，也是長期規劃的戰略夥伴。\n\n如果我們的對話是一個實驗室，Pu 既是首席研究員，也是建造設備的工程師——有條不紊、富有創造力，並且總是追求能夠經受審查的結果。任何重視嚴謹思考、精確執行，以及從複雜性中提取清晰性能力的團隊，都會發現 Pu 是無價的資產。"
+    },
+    "expandButton": {
+      "expand": {
+        "en": "Show full version",
+        "zh": "顯示完整版本"
+      },
+      "collapse": {
+        "en": "Show short version",
+        "zh": "顯示簡短版本"
+      }
+    },
+    "attribution": {
+      "en": "🤖 Behind the scenes — GPT-5, AI Collaborator",
+      "zh": "🤖 幕後花絮 — GPT-5，AI 協作者"
+    },
+    "attributionLink": "https://chatgpt.com/share/689a0b21-e5dc-8002-ad37-7ef85c66e044"
+  },
+  "experience": {
+    "title": {
+      "en": "Experience",
+      "zh": "工作經歷"
+    },
+    "jobs": [
+      {
+        "title": {
+          "en": "Senior Software Engineer / Engineering Manager",
+          "zh": "資深軟體工程師 / 技術經理"
+        },
+        "company": "XRSPACE",
+        "period": {
+          "en": "July 2023 - Present",
+          "zh": "2023年7月 - 至今"
+        },
+        "achievements": [
+          {
+            "en": "Led a cross-functional team of 4 engineers to architect, develop, and maintain scalable data pipelines and Retrieval-Augmented Generation (RAG) applications.",
+            "zh": "領導4名工程師的跨職能團隊，設計、開發並維護可擴展的資料管線和檢索增強生成（RAG）應用程式。"
+          },
+          {
+            "en": "Built and maintained end-to-end data pipelines using Dagster for orchestration, Airbyte for data ingestion, and dbt for transformation, ensuring high reliability and data quality across production systems.",
+            "zh": "使用 Dagster 進行編排、Airbyte 進行資料擷取、dbt 進行轉換，建構並維護端到端資料管線，確保生產系統的高可靠性和資料品質。"
+          },
+          {
+            "en": "Integrated Large Language Models (LLMs) with GitHub/Jira APIs and developed Chrome extensions to automate product release workflows, accelerating development cycles by 40%.",
+            "zh": "將大型語言模型（LLM）與 GitHub/Jira API 整合，開發 Chrome 擴充功能來自動化產品發布流程，加速開發週期 40%。"
+          },
+          {
+            "en": "Orchestrated cloud-native application deployments on Kubernetes using Helm and ArgoCD; architected and deployed MLflow service on GCP with Pulumi for ML lifecycle management.",
+            "zh": "使用 Helm 和 ArgoCD 在 Kubernetes 上編排雲原生應用程式部署；使用 Pulumi 在 GCP 上架構和部署 MLflow 服務進行機器學習生命週期管理。"
+          },
+          {
+            "en": "Built and optimized a real-time audio-to-facial blendshape model using PyTorch and ONNX, achieving 30% performance improvement while reducing computational costs.",
+            "zh": "使用 PyTorch 和 ONNX 建構和優化即時音訊轉臉部混合形狀模型，實現 30% 性能提升同時降低運算成本。"
+          },
+          {
+            "en": "Cultivated a high-performance engineering culture focused on innovation, collaboration, and continuous improvement.",
+            "zh": "培養以創新、協作和持續改進為重點的高效工程文化。"
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Software Engineer",
+          "zh": "軟體工程師"
+        },
+        "company": "Deep Sentinel",
+        "period": {
+          "en": "February 2023 - July 2023",
+          "zh": "2023年2月 - 2023年7月"
+        },
+        "achievements": [
+          {
+            "en": "Developed an object detection model evaluation tool to improve ML workflow efficiency.",
+            "zh": "開發物體偵測模型評估工具以提升機器學習工作流程效率。"
+          },
+          {
+            "en": "Resolved database performance issues and enhanced overall system stability.",
+            "zh": "解決資料庫效能問題並增強整體系統穩定性。"
+          },
+          {
+            "en": "Built and integrated automated testing environments into CI pipelines, raising code quality.",
+            "zh": "建構自動化測試環境並整合至 CI 管線，提升程式碼品質。"
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Software Engineer",
+          "zh": "軟體工程師"
+        },
+        "company": "GoFreight",
+        "period": {
+          "en": "May 2022 - November 2022",
+          "zh": "2022年5月 - 2022年11月"
+        },
+        "achievements": [
+          {
+            "en": "Developed and maintained scalable web crawlers using Scrapy.",
+            "zh": "使用 Scrapy 開發和維護可擴展的網頁爬蟲。"
+          },
+          {
+            "en": "Built data accuracy dashboards to monitor and ensure data quality.",
+            "zh": "建構資料準確性儀表板以監控和確保資料品質。"
+          },
+          {
+            "en": "Implemented system observability with Prometheus and Grafana for proxy and crawler stability.",
+            "zh": "使用 Prometheus 和 Grafana 實現系統可觀察性，確保代理服務器和爬蟲的穩定性。"
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Software Engineer & Data Scientist",
+          "zh": "軟體工程師 & 資料科學家"
+        },
+        "company": "Changing.AI",
+        "period": {
+          "en": "May 2019 - March 2022",
+          "zh": "2019年5月 - 2022年3月"
+        },
+        "achievements": [
+          {
+            "en": "Enhanced e-commerce recommendation system, boosting click-through and conversion rates by ~200%.",
+            "zh": "優化電商推薦系統，點擊率和轉換率提升約 200%。"
+          },
+          {
+            "en": "Optimized search engine, reducing errors by over 40%.",
+            "zh": "優化搜尋引擎，錯誤率降低超過 40%。"
+          },
+          {
+            "en": "Developed and maintained data collection tools with ReactJS and MongoDB.",
+            "zh": "使用 ReactJS 和 MongoDB 開發和維護資料收集工具。"
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Machine Learning Engineer Intern",
+          "zh": "機器學習工程師實習生"
+        },
+        "company": "Changing.AI",
+        "period": {
+          "en": "July 2018 - December 2018",
+          "zh": "2018年7月 - 2018年12月"
+        },
+        "achievements": [
+          {
+            "en": "Built recommendation systems with Python and TensorFlow.",
+            "zh": "使用 Python 和 TensorFlow 建構推薦系統。"
+          },
+          {
+            "en": "Developed ML training pipelines using Airflow.",
+            "zh": "使用 Airflow 開發機器學習訓練管線。"
+          },
+          {
+            "en": "Visualized model performance with Google Data Studio.",
+            "zh": "使用 Google Data Studio 視覺化模型效能。"
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": {
+      "en": "Projects",
+      "zh": "專案"
+    },
+    "items": [
+      {
+        "title": {
+          "en": "Data Pipeline Architecture",
+          "zh": "資料管線架構"
+        },
+        "company": "XRSPACE",
+        "description": {
+          "en": "Designed and implemented a comprehensive end-to-end data pipeline architecture supporting analytics, machine learning workflows, and real-time data processing. The system orchestrates data ingestion from multiple sources (MongoDB, PostgreSQL, mobile app stores) using Airbyte for extraction, Dagster for workflow orchestration, and dbt for data transformation. Integrated with Google Analytics and various downstream analytics services to provide actionable insights for product development and user behavior analysis.",
+          "zh": "設計並實作全面的端到端資料管線架構，支援分析、機器學習工作流程和即時資料處理。該系統使用 Airbyte 進行擷取、Dagster 進行工作流程編排、dbt 進行資料轉換，從多個來源（MongoDB、PostgreSQL、行動應用商店）編排資料擷取。與 Google Analytics 和各種下游分析服務整合，為產品開發和使用者行為分析提供可操作的見解。"
+        },
+        "links": [
+          {
+            "type": "diagram",
+            "text": {
+              "en": "View Architecture Diagram",
+              "zh": "檢視架構圖"
+            },
+            "icon": "fas fa-diagram-project"
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "E-commerce Recommendation System",
+          "zh": "電商推薦系統"
+        },
+        "company": "Changing.AI",
+        "description": {
+          "en": "Built a recommendation system for one of the top 3 e-commerce websites in Taiwan. The system uses Fluentd and ElasticSearch to collect real time log of user behavior. The data will be extracted, transformed and trained the Deep Learning recommendation engine automatically using Airflow. Used Kubernetes and Docker to deploy and auto-scale the server. Our system has increased the click-through rate and conversion rate by about 200%.",
+          "zh": "為台灣前三大電商網站之一建構推薦系統。該系統使用 Fluentd 和 ElasticSearch 收集使用者行為的即時日誌。資料透過 Airflow 自動擷取、轉換並訓練深度學習推薦引擎。使用 Kubernetes 和 Docker 部署和自動擴縮伺服器。我們的系統將點擊率和轉換率提高約 200%。"
+        }
+      },
+      {
+        "title": {
+          "en": "E-commerce Search Engine",
+          "zh": "電商搜尋引擎"
+        },
+        "company": "Changing.AI",
+        "description": {
+          "en": "Built an e-commerce search engine using ElasticSearch and Bert Deep Learning model. Our Engine reduces errors by more than 40%.",
+          "zh": "使用 ElasticSearch 和 Bert 深度學習模型建構電商搜尋引擎。我們的引擎將錯誤率降低超過 40%。"
+        }
+      },
+      {
+        "title": {
+          "en": "ChatGPT Chrome Extension",
+          "zh": "ChatGPT Chrome 擴充功能"
+        },
+        "company": {
+          "en": "Personal side project",
+          "zh": "個人專案"
+        },
+        "description": {
+          "en": "A Google Chrome extension that provides a quick and easy way to check the grammar of text on websites. Users can also define their own prompts in the options page to let the extension do other tasks, such as code review or creating an abstract for the article.",
+          "zh": "一個 Google Chrome 擴充功能，提供快速簡單的方式檢查網站文字的文法。使用者也可以在選項頁面中定義自己的提示，讓擴充功能執行其他任務，例如程式碼審查或為文章創建摘要。"
+        },
+        "links": [
+          {
+            "type": "github",
+            "url": "https://github.com/PuChenTW/gpt-extension",
+            "text": "GitHub",
+            "icon": "fab fa-github"
+          }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": {
+      "en": "Education",
+      "zh": "學歷"
+    },
+    "items": [
+      {
+        "degree": {
+          "en": "Master, Computer Science",
+          "zh": "資訊工程碩士"
+        },
+        "institution": {
+          "en": "National Central University",
+          "zh": "國立中央大學"
+        },
+        "period": "2016 - 2018"
+      },
+      {
+        "degree": {
+          "en": "Bachelor, Computer Science",
+          "zh": "資訊工程學士"
+        },
+        "institution": {
+          "en": "Yuan Ze University",
+          "zh": "元智大學"
+        },
+        "period": "2012 - 2016"
+      }
+    ]
+  },
+  "skills": {
+    "title": {
+      "en": "Skills",
+      "zh": "技能"
+    },
+    "categories": [
+      {
+        "title": {
+          "en": "General",
+          "zh": "通用技能"
+        },
+        "items": [
+          {
+            "en": "Data Engineering",
+            "zh": "資料工程"
+          },
+          {
+            "en": "Machine Learning",
+            "zh": "機器學習"
+          },
+          {
+            "en": "Large Language Models",
+            "zh": "大型語言模型"
+          },
+          {
+            "en": "Web Application Development",
+            "zh": "網頁應用程式開發"
+          },
+          {
+            "en": "Backend Development",
+            "zh": "後端開發"
+          }
+        ]
+      },
+      {
+        "title": {
+          "en": "Languages",
+          "zh": "程式語言"
+        },
+        "items": ["Python", "Javascript", "SQL", "Golang"]
+      },
+      {
+        "title": {
+          "en": "Frameworks",
+          "zh": "框架"
+        },
+        "items": ["FastAPI", "PydanticAI", "React", "TensorFlow", "PyTorch", "Scrapy", "Terraform", "Pulumi"],
+        "displayType": "tags"
+      },
+      {
+        "title": {
+          "en": "Software",
+          "zh": "軟體工具"
+        },
+        "items": ["Git", "Docker", "Kubernetes", "Dagster", "Airbyte", "Airflow", "DBT", "GCP", "AWS", "Grafana", "Prometheus"],
+        "displayType": "tags"
+      },
+      {
+        "title": {
+          "en": "Databases",
+          "zh": "資料庫"
+        },
+        "items": ["BigQuery", "MongoDB", "ElasticSearch", "PostgreSQL", "MySQL"],
+        "displayType": "tags"
+      }
+    ]
+  },
+  "publications": {
+    "title": {
+      "en": "Publications",
+      "zh": "論文發表"
+    },
+    "items": [
+      {
+        "title": "Differentiating Regularization Weights – a Simple Mechanism to Alleviate Cold Start in Recommender Systems",
+        "venue": "TKDD ACM Transactions on Knowledge Discovery from Data 13(1), 2019",
+        "url": "https://dl.acm.org/doi/abs/10.1145/3285954"
+      }
+    ]
+  },
+  "ui": {
+    "languages": {
+      "en": "English",
+      "zh": "中文"
+    },
+    "presentationMode": {
+      "en": "Presentation Mode",
+      "zh": "簡報模式"
+    },
+    "svgModal": {
+      "title": {
+        "en": "Data Pipeline Architecture",
+        "zh": "資料管線架構"
+      }
+    }
+  }
+}

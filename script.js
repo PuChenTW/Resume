@@ -950,13 +950,40 @@ class PresentationMode {
                 const company = project.querySelector('.company').textContent;
                 const description = project.querySelector('p').textContent;
 
-                return `
+                // Check if this project has a diagram by looking for the diagram button
+                const diagramBtn = project.querySelector('.view-diagram-btn');
+                const hasDiagram = diagramBtn !== null;
+
+                let slideContent = `
                     <div class="presentation-slide">
                         <h2>${projectTitle}</h2>
                         <div class="company">${company}</div>
+                `;
+
+                if (hasDiagram) {
+                    // For projects with diagrams, show the SVG and description side by side
+                    slideContent += `
+                        <div style="display: flex; gap: 2rem; margin-top: 2rem; align-items: flex-start; max-width: 1200px;">
+                            <div style="flex: 1; text-align: left;">
+                                <p style="margin: 0;">${description}</p>
+                            </div>
+                            <div style="flex: 1; display: flex; justify-content: center; align-items: center; background: white; border-radius: 8px; padding: 1rem;">
+                                <img src="data_pipeline.svg" alt="Data Pipeline Architecture Diagram" style="max-width: 100%; max-height: 400px; object-fit: contain;" />
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    // For projects without diagrams, show just the description
+                    slideContent += `
                         <p style="margin-top: 2rem; text-align: left; max-width: 900px;">${description}</p>
+                    `;
+                }
+
+                slideContent += `
                     </div>
                 `;
+
+                return slideContent;
             }
         }));
     }

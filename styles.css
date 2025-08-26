@@ -950,7 +950,7 @@ h2::after {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: justify;
     color: white;
     opacity: 0;
     transform: translateX(100px);

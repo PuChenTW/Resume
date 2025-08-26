@@ -768,7 +768,6 @@ h2::after {
     flex: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .svg-modal-body img {
